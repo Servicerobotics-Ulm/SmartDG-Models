@@ -1,0 +1,47 @@
+SystemComponentArchitecture SurveillanceSystem
+{
+	ComponentInstance Cam1 instantiates ZeroCamera
+	{
+		ProvidedService RGBImage
+		ProvidedService GrayImage
+	}
+	ComponentInstance Cam2 instantiates ZeroCamera
+	{
+		ProvidedService RGBImage
+		ProvidedService GrayImage
+	}
+ComponentInstance Mapper instantiates TwoMapMaker
+	{
+		RequiredService Image1
+		RequiredService Image2
+		RequiredService GrayImage1
+		RequiredService GrayImage2
+		ProvidedService RGBMap
+		ProvidedService GrayMap
+	}
+	ComponentInstance Huey instantiates OneUser
+	{
+		RequiredService Map
+		RequiredService BWMap
+	}
+	ComponentInstance Dewey instantiates OneUser
+	{
+		RequiredService Map
+		RequiredService BWMap
+	}
+	ComponentInstance Louie instantiates OneUser
+	{
+		RequiredService Map
+		RequiredService BWMap
+	}
+	Connection Mapper.GrayImage1 -> Cam1.GrayImage
+	Connection Mapper.Image1 -> Cam1.RGBImage
+	Connection Mapper.GrayImage2 -> Cam2.GrayImage
+	Connection Mapper.Image2 -> Cam2.RGBImage
+
+	Connection  Huey.BWMap -> Mapper.GrayMap
+
+	Connection  Louie.Map -> Mapper.RGBMap
+	Connection Dewey.BWMap -> Mapper.GrayMap
+	Connection Dewey.Map -> Mapper.RGBMap
+}

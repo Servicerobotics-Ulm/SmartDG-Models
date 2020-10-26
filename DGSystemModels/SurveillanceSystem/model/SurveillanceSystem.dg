@@ -1,0 +1,16 @@
+UserName: "SmartSoft"
+import "DependencyBaseEnvironment" from "SMART_ROOT_ACE"
+Save @ "HOME"    
+
+
+Dependency "CS05" "Cam1" . "RGBImage" --"DGPrivacy"--> "Mapper" . "Image1"
+Dependency "CS05" "Cam1" . "GrayImage" --"DGPrivacy"--> "Mapper" . "GrayImage1"
+Dependency "DF" "Cam2" . "RGBImage" --"DGPrivacy"--> "Mapper" . "Image2"
+Dependency "DF" "Cam2" . "GrayImage" --"DGPrivacy"--> "Mapper" . "GrayImage2"
+ 
+GUI "Cam1" (10,10)
+GUI "Cam2" (10,110)
+GUI "Mapper" (110,60)
+GUI "Huey" (180,10) 
+GUI "Dewey" (220,60)
+GUI "Louie" (180,110)  

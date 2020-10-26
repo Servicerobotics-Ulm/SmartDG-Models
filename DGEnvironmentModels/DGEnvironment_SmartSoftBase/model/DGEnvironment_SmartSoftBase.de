@@ -1,0 +1,112 @@
+//================================================================
+//
+//  Copyright (C) 2017 Vineet Nagrath, Alex Lotz
+//
+//        nagrath@hs-ulm.de		
+//        lotz@hs-ulm.de
+//
+//        Servicerobotik Ulm
+//        Christian Schlegel
+//        Ulm University of Applied Sciences
+//        Prittwitzstr. 10
+//        89075 Ulm
+//        Germany
+//
+//  This file is part of the SmartMDSD Toolchain V3. 
+//
+//================================================================
+
+
+//================================================================
+// Base Environment for the 
+// SmartSoft MDSD Toolchain - Smart Dependency Graphs
+//================================================================
+Environment DependencyBaseEnvironment	Wiki:"Dependency Base Environment"	{
+	//============================================================
+	// Dependency Objects
+	//============================================================	
+	
+	//------------------------------------------------------------
+	//	DGPrivacy
+	//	A Boolean Dependency Object indicating that the associated
+	//	port contains private data    
+	//
+	//	Value:
+	//	true	: Associated port contains at least one private data item
+	//	false	: Associated port contains no private data item
+	//------------------------------------------------------------
+	Object "DGPrivacy"	isMulti:"true" 
+	Wiki: "A Boolean Dependency Object indicating that the associated port contains private data"
+	
+	//------------------------------------------------------------
+	//	DGSecurity
+	//	A Boolean Dependency Object indicating that the associated
+	//	port is not visible to public    
+	//
+	//	Value:
+	//	true	: Associated port is not visible to public
+	//	false	: Associated port is visible to public
+	//------------------------------------------------------------
+	Object "DGSecurity"	isMulti:"true"
+	Wiki: "A Boolean Dependency Object indicating that the associated port is not visible to public"
+
+	//============================================================
+	// Connector Profiles
+	//============================================================
+	//	Service class		Dynamic Host Configuration Protocol(DSCP)
+	//	
+	//    Network control         CS6
+	//    Telephony               EF
+	//    Signaling               CS5
+	//    Multimedia conferencing AF41, AF42, AF43
+	//    Real-time interactive   CS4
+	//    Multimedia streaming    AF31, AF32, AF33
+	//    Broadcast video         CS3
+	//    Low-latency data        AF21, AF22, AF23
+	//    OAM                     CS2
+	//    High-throughput data    AF11, AF12, AF13
+	//    Standard                DF
+	//    Low-priority data       CS1
+	//	
+	//------------------------------------------------------------
+	//	QoS Levels
+	//					
+	//    BestEffore              No guarantees or performance measures.
+	//                          Only checks if the file transfer was 
+	//                          successful or not.
+	//    SoftQoS                 alias: Differentiated service.
+	//                          Different priority classes, No absolute guarantees
+	//    HardQos                 alias: Guaranteed service.
+	//------------------------------------------------------------
+	Connector "CS06" ["DGPrivacy","DGSecurity"]
+	Connector "CS05" ["DGPrivacy","DGSecurity"]
+	Connector "CS04" ["DGPrivacy","DGSecurity"]
+	Connector "CS03" ["DGPrivacy","DGSecurity"]
+	Connector "CS02" ["DGPrivacy","DGSecurity"]
+	Connector "CS01" ["DGPrivacy","DGSecurity"]	
+				
+	Connector "AF41" ["DGPrivacy","DGSecurity"]
+	Connector "AF42" ["DGPrivacy","DGSecurity"]
+	Connector "AF43" ["DGPrivacy","DGSecurity"]
+	Connector "AF31" ["DGPrivacy","DGSecurity"]
+	Connector "AF32" ["DGPrivacy","DGSecurity"]
+	Connector "AF33" ["DGPrivacy","DGSecurity"]
+	Connector "AF21" ["DGPrivacy","DGSecurity"]
+	Connector "AF22" ["DGPrivacy","DGSecurity"]
+	Connector "AF23" ["DGPrivacy","DGSecurity"]
+	Connector "AF11" ["DGPrivacy","DGSecurity"]
+	Connector "AF12" ["DGPrivacy","DGSecurity"]
+	Connector "AF13" ["DGPrivacy","DGSecurity"]	
+	
+	Connector "EF"   ["DGPrivacy","DGSecurity"]
+	Connector "DF"   ["DGPrivacy","DGSecurity"]
+	
+	// When none of the above is specified in the model  
+	Connector "Unnamed" ["DGPrivacy","DGSecurity"]
+	 
+	//============================================================
+	// Location where "DependencyBaseEnvironment" Environment will
+	// be generated.
+	//============================================================
+	@ "SMART_ROOT_ACE"   
+}

@@ -1,0 +1,16 @@
+ComponentDefinition OneUser logo "/OneUser/model/logo.png"
+{
+Activity ImageViewer
+	{
+		InputPortLink Map { oversamplingOk undersamplingOk }
+		InputPortLink BWMap { oversamplingOk undersamplingOk }
+	}
+	InputPort Map implements DomainVision.RGBImagePushService {
+		ComponentDependencyObject "DGPrivacy" 
+		ComponentDependencyObject "DGSecurity"
+	}
+	InputPort BWMap implements DomainVision.RGBImagePushService {
+		ComponentDependencyObject "DGPrivacy" 
+		ComponentDependencyObject "DGSecurity"
+	}
+}

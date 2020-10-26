@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ComponentDefinition="http://www.ecore.org/component/ComponentDefinition" xmlns:description="http://www.eclipse.org/sirius/description/1.1.0" xmlns:description_1="http://www.eclipse.org/sirius/diagram/description/1.1.0" xmlns:diagram="http://www.eclipse.org/sirius/diagram/1.1.0" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.2/notation" xmlns:style="http://www.eclipse.org/sirius/diagram/description/style/1.1.0" xmlns:viewpoint="http://www.eclipse.org/sirius/1.1.0" xsi:schemaLocation="http://www.eclipse.org/sirius/description/1.1.0 http://www.eclipse.org/sirius/1.1.0#//description http://www.eclipse.org/sirius/diagram/description/1.1.0 http://www.eclipse.org/sirius/diagram/1.1.0#//description http://www.eclipse.org/sirius/diagram/description/style/1.1.0 http://www.eclipse.org/sirius/diagram/1.1.0#//description/style">
+  <viewpoint:DAnalysis uid="_sHkagPdcEeqJ7NrCWMxCJg" selectedViews="_so0tcPdcEeqJ7NrCWMxCJg" version="14.1.0.201810161215">
+    <semanticResources>model/ZeroCamera.component</semanticResources>
+    <semanticResources>model/ZeroCamera.do</semanticResources>
+    <semanticResources>platform:/resource/DomainVision/model/DomainVision.services</semanticResources>
+    <semanticResources>platform:/resource/CommBasicObjects/model/CommBasicObjects.types</semanticResources>
+    <semanticResources>platform:/resource/DomainVision/model/DomainVision.types</semanticResources>
+    <semanticResources>platform:/plugin/org.xtext.base.stateMachine/componentLifecycle/ComponentLifecycle.automaton</semanticResources>
+    <semanticResources>platform:/resource/DomainVision/model/DomainVision.modes</semanticResources>
+    <semanticResources>platform:/plugin/org.xtext.service.parameterDefinition/defaultParameterLib/defaultParameterLib.parameters</semanticResources>
+    <ownedViews xmi:type="viewpoint:DView" uid="_so0tcPdcEeqJ7NrCWMxCJg">
+      <viewpoint xmi:type="description:Viewpoint" href="platform:/plugin/org.sirius.component.design/description/component.odesign#//@ownedViewpoints[name='ComponentDefinitionViewpoint']"/>
+      <ownedRepresentationDescriptors xmi:type="viewpoint:DRepresentationDescriptor" uid="_sqBAQPdcEeqJ7NrCWMxCJg" name="ZeroCamera" repPath="#_spOWEPdcEeqJ7NrCWMxCJg">
+        <description xmi:type="description_1:DiagramDescription" href="platform:/plugin/org.sirius.component.design/description/component.odesign#//@ownedViewpoints[name='ComponentDefinitionViewpoint']/@ownedRepresentations[name='ComponentDefinitionDiagram']"/>
+        <target xmi:type="ComponentDefinition:ComponentDefModel" href="model/ZeroCamera.component#/"/>
+      </ownedRepresentationDescriptors>
+    </ownedViews>
+  </viewpoint:DAnalysis>
+  <diagram:DSemanticDiagram uid="_spOWEPdcEeqJ7NrCWMxCJg" name="ZeroCamera">
+    <ownedAnnotationEntries xmi:type="description:AnnotationEntry" uid="_sp9V4PdcEeqJ7NrCWMxCJg" source="DANNOTATION_CUSTOMIZATION_KEY">
+      <data xmi:type="diagram:ComputedStyleDescriptionRegistry" uid="_sp988PdcEeqJ7NrCWMxCJg"/>
+    </ownedAnnotationEntries>
+    <ownedAnnotationEntries xmi:type="description:AnnotationEntry" uid="_sqStEPdcEeqJ7NrCWMxCJg" source="GMF_DIAGRAMS">
+      <data xmi:type="notation:Diagram" xmi:id="_sqStEfdcEeqJ7NrCWMxCJg" type="Sirius" element="_spOWEPdcEeqJ7NrCWMxCJg" measurementUnit="Pixel">
+        <children xmi:type="notation:Node" xmi:id="_sqceEPdcEeqJ7NrCWMxCJg" type="2002" element="_spusYPdcEeqJ7NrCWMxCJg">
+          <children xmi:type="notation:Node" xmi:id="_sqhWkPdcEeqJ7NrCWMxCJg" type="5006"/>
+          <children xmi:type="notation:Node" xmi:id="_sqiksPdcEeqJ7NrCWMxCJg" type="7001">
+            <children xmi:type="notation:Node" xmi:id="_v3joYPdeEeqJ7NrCWMxCJg" type="3008" element="_v3c6sPdeEeqJ7NrCWMxCJg">
+              <children xmi:type="notation:Node" xmi:id="_v3joY_deEeqJ7NrCWMxCJg" type="5005"/>
+              <children xmi:type="notation:Node" xmi:id="_v3kPcPdeEeqJ7NrCWMxCJg" type="7002">
+                <styles xmi:type="notation:SortingStyle" xmi:id="_v3kPcfdeEeqJ7NrCWMxCJg"/>
+                <styles xmi:type="notation:FilteringStyle" xmi:id="_v3kPcvdeEeqJ7NrCWMxCJg"/>
+              </children>
+              <styles xmi:type="notation:ShapeStyle" xmi:id="_v3joYfdeEeqJ7NrCWMxCJg" fontName="Ubuntu" fontHeight="8" bold="true"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_v3joYvdeEeqJ7NrCWMxCJg" x="31" y="30"/>
+            </children>
+            <children xmi:type="notation:Node" xmi:id="_4mtw4PdeEeqJ7NrCWMxCJg" type="3008" element="_4moRUPdeEeqJ7NrCWMxCJg">
+              <children xmi:type="notation:Node" xmi:id="_4mtw4_deEeqJ7NrCWMxCJg" type="5005"/>
+              <children xmi:type="notation:Node" xmi:id="_4muX8PdeEeqJ7NrCWMxCJg" type="7002">
+                <styles xmi:type="notation:SortingStyle" xmi:id="_4muX8fdeEeqJ7NrCWMxCJg"/>
+                <styles xmi:type="notation:FilteringStyle" xmi:id="_4muX8vdeEeqJ7NrCWMxCJg"/>
+              </children>
+              <styles xmi:type="notation:ShapeStyle" xmi:id="_4mtw4fdeEeqJ7NrCWMxCJg" fontName="Ubuntu" fontHeight="8" bold="true"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_4mtw4vdeEeqJ7NrCWMxCJg" x="31" y="114"/>
+            </children>
+            <styles xmi:type="notation:SortingStyle" xmi:id="_sqiksfdcEeqJ7NrCWMxCJg"/>
+            <styles xmi:type="notation:FilteringStyle" xmi:id="_sqiksvdcEeqJ7NrCWMxCJg"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_8cXMwPdeEeqJ7NrCWMxCJg" type="3012" element="_8cIjQPdeEeqJ7NrCWMxCJg">
+            <children xmi:type="notation:Node" xmi:id="_8cXz0PdeEeqJ7NrCWMxCJg" type="5010">
+              <layoutConstraint xmi:type="notation:Location" xmi:id="_8cXz0fdeEeqJ7NrCWMxCJg" x="31" y="5"/>
+            </children>
+            <children xmi:type="notation:Node" xmi:id="_8cbeMPdeEeqJ7NrCWMxCJg" type="3014" element="_8cLmkPdeEeqJ7NrCWMxCJg">
+              <styles xmi:type="notation:ShapeStyle" xmi:id="_8cbeMfdeEeqJ7NrCWMxCJg" fontName="Ubuntu"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_8cbeMvdeEeqJ7NrCWMxCJg"/>
+            </children>
+            <styles xmi:type="notation:ShapeStyle" xmi:id="_8cXMwfdeEeqJ7NrCWMxCJg" fontName="Ubuntu" fontHeight="8"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_8cXMwvdeEeqJ7NrCWMxCJg" x="221" y="60" width="30" height="30"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_-LEKQPdeEeqJ7NrCWMxCJg" type="3012" element="_-K-qsPdeEeqJ7NrCWMxCJg">
+            <children xmi:type="notation:Node" xmi:id="_-LEKQ_deEeqJ7NrCWMxCJg" type="5010">
+              <layoutConstraint xmi:type="notation:Location" xmi:id="_-LEKRPdeEeqJ7NrCWMxCJg" x="31" y="5"/>
+            </children>
+            <children xmi:type="notation:Node" xmi:id="_-LFYYPdeEeqJ7NrCWMxCJg" type="3014" element="_-K-qsfdeEeqJ7NrCWMxCJg">
+              <styles xmi:type="notation:ShapeStyle" xmi:id="_-LFYYfdeEeqJ7NrCWMxCJg" fontName="Ubuntu"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_-LFYYvdeEeqJ7NrCWMxCJg"/>
+            </children>
+            <styles xmi:type="notation:ShapeStyle" xmi:id="_-LEKQfdeEeqJ7NrCWMxCJg" fontName="Ubuntu" fontHeight="8"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_-LEKQvdeEeqJ7NrCWMxCJg" x="221" y="144" width="30" height="30"/>
+          </children>
+          <styles xmi:type="notation:ShapeStyle" xmi:id="_sqceEfdcEeqJ7NrCWMxCJg" fontName="Ubuntu" fontHeight="10" bold="true"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_sqceEvdcEeqJ7NrCWMxCJg" x="324" y="132" width="231" height="219"/>
+        </children>
+        <styles xmi:type="notation:DiagramStyle" xmi:id="_sqStEvdcEeqJ7NrCWMxCJg"/>
+        <edges xmi:type="notation:Edge" xmi:id="_8cfvoPdeEeqJ7NrCWMxCJg" type="4001" element="_8cSUQPdeEeqJ7NrCWMxCJg" source="_v3joYPdeEeqJ7NrCWMxCJg" target="_8cXMwPdeEeqJ7NrCWMxCJg">
+          <children xmi:type="notation:Node" xmi:id="_8cgWsPdeEeqJ7NrCWMxCJg" type="6001">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_8cgWsfdeEeqJ7NrCWMxCJg" y="-10"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_8cg9wPdeEeqJ7NrCWMxCJg" type="6002">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_8cg9wfdeEeqJ7NrCWMxCJg" y="10"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_8cg9wvdeEeqJ7NrCWMxCJg" type="6003">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_8cg9w_deEeqJ7NrCWMxCJg" y="10"/>
+          </children>
+          <styles xmi:type="notation:ConnectorStyle" xmi:id="_8cfvofdeEeqJ7NrCWMxCJg"/>
+          <styles xmi:type="notation:FontStyle" xmi:id="_8cfvovdeEeqJ7NrCWMxCJg" fontName="Ubuntu" fontHeight="8"/>
+          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_8cfvo_deEeqJ7NrCWMxCJg" points="[4, 1, -202, -45]$[191, 42, -15, -4]"/>
+          <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_8cnEYPdeEeqJ7NrCWMxCJg" id="(0.5,0.5)"/>
+          <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_8cnEYfdeEeqJ7NrCWMxCJg" id="(0.5,0.5)"/>
+        </edges>
+        <edges xmi:type="notation:Edge" xmi:id="_-LFYY_deEeqJ7NrCWMxCJg" type="4001" element="_-LCVFPdeEeqJ7NrCWMxCJg" source="_4mtw4PdeEeqJ7NrCWMxCJg" target="_-LEKQPdeEeqJ7NrCWMxCJg">
+          <children xmi:type="notation:Node" xmi:id="_-LFYZ_deEeqJ7NrCWMxCJg" type="6001">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_-LFYaPdeEeqJ7NrCWMxCJg" y="-10"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_-LFYafdeEeqJ7NrCWMxCJg" type="6002">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_-LFYavdeEeqJ7NrCWMxCJg" y="10"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_-LFYa_deEeqJ7NrCWMxCJg" type="6003">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_-LFYbPdeEeqJ7NrCWMxCJg" y="10"/>
+          </children>
+          <styles xmi:type="notation:ConnectorStyle" xmi:id="_-LFYZPdeEeqJ7NrCWMxCJg"/>
+          <styles xmi:type="notation:FontStyle" xmi:id="_-LFYZfdeEeqJ7NrCWMxCJg" fontName="Ubuntu" fontHeight="8"/>
+          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_-LFYZvdeEeqJ7NrCWMxCJg" points="[4, 1, -202, -45]$[191, 42, -15, -4]"/>
+          <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_-LF_cPdeEeqJ7NrCWMxCJg" id="(0.5,0.5)"/>
+          <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_-LF_cfdeEeqJ7NrCWMxCJg" id="(0.5,0.5)"/>
+        </edges>
+      </data>
+    </ownedAnnotationEntries>
+    <ownedDiagramElements xmi:type="diagram:DNodeContainer" uid="_spusYPdcEeqJ7NrCWMxCJg" name="ZeroCamera" tooltipText="ComponentDefinition: ZeroCamera&#xA;">
+      <target xmi:type="ComponentDefinition:ComponentDefinition" href="model/ZeroCamera.component#//@component"/>
+      <semanticElements xmi:type="ComponentDefinition:ComponentDefinition" href="model/ZeroCamera.component#//@component"/>
+      <ownedBorderedNodes xmi:type="diagram:DNode" uid="_8cIjQPdeEeqJ7NrCWMxCJg" name="RGBImage" tooltipText="OutputPort" incomingEdges="_8cSUQPdeEeqJ7NrCWMxCJg" width="3" height="3" resizeKind="NSEW">
+        <target xmi:type="ComponentDefinition:OutputPort" href="model/ZeroCamera.component#//@component/@elements.2"/>
+        <semanticElements xmi:type="ComponentDefinition:OutputPort" href="model/ZeroCamera.component#//@component/@elements.2"/>
+        <ownedStyle xmi:type="diagram:CustomStyle" uid="_8cLmkPdeEeqJ7NrCWMxCJg" showIcon="false" id="output">
+          <description xmi:type="style:CustomStyleDescription" href="platform:/plugin/org.sirius.component.design/description/component.odesign#//@ownedViewpoints[name='ComponentDefinitionViewpoint']/@ownedRepresentations[name='ComponentDefinitionDiagram']/@defaultLayer/@containerMappings[name='ComponentContainer']/@borderedNodeMappings[name='OutputPortNode']/@style"/>
+        </ownedStyle>
+        <actualMapping xmi:type="description_1:NodeMappingImport" href="platform:/plugin/org.sirius.component.design/description/component.odesign#//@ownedViewpoints[name='ComponentDefinitionViewpoint']/@ownedRepresentations[name='ComponentDefinitionDiagram']/@additionalLayers[name='SeRoNet']/@containerMappings[name='ComponentContainerImport']/@borderedNodeMappings[name='OutputPortNodeImport']"/>
+      </ownedBorderedNodes>
+      <ownedBorderedNodes xmi:type="diagram:DNode" uid="_-K-qsPdeEeqJ7NrCWMxCJg" name="GrayImage" tooltipText="OutputPort" incomingEdges="_-LCVFPdeEeqJ7NrCWMxCJg" width="3" height="3" resizeKind="NSEW">
+        <target xmi:type="ComponentDefinition:OutputPort" href="model/ZeroCamera.component#//@component/@elements.3"/>
+        <semanticElements xmi:type="ComponentDefinition:OutputPort" href="model/ZeroCamera.component#//@component/@elements.3"/>
+        <ownedStyle xmi:type="diagram:CustomStyle" uid="_-K-qsfdeEeqJ7NrCWMxCJg" showIcon="false" id="output">
+          <description xmi:type="style:CustomStyleDescription" href="platform:/plugin/org.sirius.component.design/description/component.odesign#//@ownedViewpoints[name='ComponentDefinitionViewpoint']/@ownedRepresentations[name='ComponentDefinitionDiagram']/@defaultLayer/@containerMappings[name='ComponentContainer']/@borderedNodeMappings[name='OutputPortNode']/@style"/>
+        </ownedStyle>
+        <actualMapping xmi:type="description_1:NodeMappingImport" href="platform:/plugin/org.sirius.component.design/description/component.odesign#//@ownedViewpoints[name='ComponentDefinitionViewpoint']/@ownedRepresentations[name='ComponentDefinitionDiagram']/@additionalLayers[name='SeRoNet']/@containerMappings[name='ComponentContainerImport']/@borderedNodeMappings[name='OutputPortNodeImport']"/>
+      </ownedBorderedNodes>
+      <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
+      <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
+      <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
+      <ownedStyle xmi:type="diagram:FlatContainerStyle" uid="_spy90PdcEeqJ7NrCWMxCJg" labelSize="10" borderSize="1" borderSizeComputationExpression="1" foregroundColor="255,245,181">
+        <labelFormat>bold</labelFormat>
+        <description xmi:type="style:FlatContainerStyleDescription" href="platform:/plugin/org.sirius.component.design/description/component.odesign#//@ownedViewpoints[name='ComponentDefinitionViewpoint']/@ownedRepresentations[name='ComponentDefinitionDiagram']/@defaultLayer/@containerMappings[name='ComponentContainer']/@style"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:ContainerMappingImport" href="platform:/plugin/org.sirius.component.design/description/component.odesign#//@ownedViewpoints[name='ComponentDefinitionViewpoint']/@ownedRepresentations[name='ComponentDefinitionDiagram']/@additionalLayers[name='SeRoNet']/@containerMappings[name='ComponentContainerImport']"/>
+      <ownedDiagramElements xmi:type="diagram:DNodeContainer" uid="_v3c6sPdeEeqJ7NrCWMxCJg" name="ImageCapture" tooltipText="Activity" outgoingEdges="_8cSUQPdeEeqJ7NrCWMxCJg">
+        <target xmi:type="ComponentDefinition:Activity" href="model/ZeroCamera.component#//@component/@elements.0"/>
+        <semanticElements xmi:type="ComponentDefinition:Activity" href="model/ZeroCamera.component#//@component/@elements.0"/>
+        <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
+        <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
+        <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
+        <ownedStyle xmi:type="diagram:FlatContainerStyle" uid="_v3dhwPdeEeqJ7NrCWMxCJg" borderSize="1" borderSizeComputationExpression="1">
+          <labelFormat>bold</labelFormat>
+          <description xmi:type="style:FlatContainerStyleDescription" href="platform:/plugin/org.sirius.component.design/description/component.odesign#//@ownedViewpoints[name='ComponentDefinitionViewpoint']/@ownedRepresentations[name='ComponentDefinitionDiagram']/@defaultLayer/@containerMappings[name='ComponentContainer']/@subContainerMappings[name='ActivityContainer']/@style"/>
+        </ownedStyle>
+        <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/plugin/org.sirius.component.design/description/component.odesign#//@ownedViewpoints[name='ComponentDefinitionViewpoint']/@ownedRepresentations[name='ComponentDefinitionDiagram']/@defaultLayer/@containerMappings[name='ComponentContainer']/@subContainerMappings[name='ActivityContainer']"/>
+      </ownedDiagramElements>
+      <ownedDiagramElements xmi:type="diagram:DNodeContainer" uid="_4moRUPdeEeqJ7NrCWMxCJg" name="rgb2gray" tooltipText="Activity" outgoingEdges="_-LCVFPdeEeqJ7NrCWMxCJg">
+        <target xmi:type="ComponentDefinition:Activity" href="model/ZeroCamera.component#//@component/@elements.1"/>
+        <semanticElements xmi:type="ComponentDefinition:Activity" href="model/ZeroCamera.component#//@component/@elements.1"/>
+        <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
+        <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
+        <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
+        <ownedStyle xmi:type="diagram:FlatContainerStyle" uid="_4mo4YPdeEeqJ7NrCWMxCJg" borderSize="1" borderSizeComputationExpression="1">
+          <labelFormat>bold</labelFormat>
+          <description xmi:type="style:FlatContainerStyleDescription" href="platform:/plugin/org.sirius.component.design/description/component.odesign#//@ownedViewpoints[name='ComponentDefinitionViewpoint']/@ownedRepresentations[name='ComponentDefinitionDiagram']/@defaultLayer/@containerMappings[name='ComponentContainer']/@subContainerMappings[name='ActivityContainer']/@style"/>
+        </ownedStyle>
+        <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/plugin/org.sirius.component.design/description/component.odesign#//@ownedViewpoints[name='ComponentDefinitionViewpoint']/@ownedRepresentations[name='ComponentDefinitionDiagram']/@defaultLayer/@containerMappings[name='ComponentContainer']/@subContainerMappings[name='ActivityContainer']"/>
+      </ownedDiagramElements>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DEdge" uid="_8cSUQPdeEeqJ7NrCWMxCJg" sourceNode="_v3c6sPdeEeqJ7NrCWMxCJg" targetNode="_8cIjQPdeEeqJ7NrCWMxCJg">
+      <target xmi:type="ComponentDefinition:OutputPort" href="model/ZeroCamera.component#//@component/@elements.2"/>
+      <semanticElements xmi:type="ComponentDefinition:OutputPort" href="model/ZeroCamera.component#//@component/@elements.2"/>
+      <ownedStyle xmi:type="diagram:EdgeStyle" uid="_8cUwgPdeEeqJ7NrCWMxCJg" size="2">
+        <description xmi:type="style:EdgeStyleDescription" href="platform:/plugin/org.sirius.component.design/description/component.odesign#//@ownedViewpoints[name='ComponentDefinitionViewpoint']/@ownedRepresentations[name='ComponentDefinitionDiagram']/@defaultLayer/@edgeMappings[name='ActivityOutputEdge']/@style"/>
+        <centerLabelStyle xmi:type="diagram:CenterLabelStyle" uid="_8cUwgfdeEeqJ7NrCWMxCJg"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/plugin/org.sirius.component.design/description/component.odesign#//@ownedViewpoints[name='ComponentDefinitionViewpoint']/@ownedRepresentations[name='ComponentDefinitionDiagram']/@defaultLayer/@edgeMappings[name='ActivityOutputEdge']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DEdge" uid="_-LCVFPdeEeqJ7NrCWMxCJg" sourceNode="_4moRUPdeEeqJ7NrCWMxCJg" targetNode="_-K-qsPdeEeqJ7NrCWMxCJg">
+      <target xmi:type="ComponentDefinition:OutputPort" href="model/ZeroCamera.component#//@component/@elements.3"/>
+      <semanticElements xmi:type="ComponentDefinition:OutputPort" href="model/ZeroCamera.component#//@component/@elements.3"/>
+      <ownedStyle xmi:type="diagram:EdgeStyle" uid="_-LC8IPdeEeqJ7NrCWMxCJg" size="2">
+        <description xmi:type="style:EdgeStyleDescription" href="platform:/plugin/org.sirius.component.design/description/component.odesign#//@ownedViewpoints[name='ComponentDefinitionViewpoint']/@ownedRepresentations[name='ComponentDefinitionDiagram']/@defaultLayer/@edgeMappings[name='ActivityOutputEdge']/@style"/>
+        <centerLabelStyle xmi:type="diagram:CenterLabelStyle" uid="_-LC8IfdeEeqJ7NrCWMxCJg"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/plugin/org.sirius.component.design/description/component.odesign#//@ownedViewpoints[name='ComponentDefinitionViewpoint']/@ownedRepresentations[name='ComponentDefinitionDiagram']/@defaultLayer/@edgeMappings[name='ActivityOutputEdge']"/>
+    </ownedDiagramElements>
+    <description xmi:type="description_1:DiagramDescription" href="platform:/plugin/org.sirius.component.design/description/component.odesign#//@ownedViewpoints[name='ComponentDefinitionViewpoint']/@ownedRepresentations[name='ComponentDefinitionDiagram']"/>
+    <filterVariableHistory xmi:type="diagram:FilterVariableHistory" uid="_spWR4PdcEeqJ7NrCWMxCJg"/>
+    <activatedLayers xmi:type="description_1:Layer" href="platform:/plugin/org.sirius.component.design/description/component.odesign#//@ownedViewpoints[name='ComponentDefinitionViewpoint']/@ownedRepresentations[name='ComponentDefinitionDiagram']/@defaultLayer"/>
+    <activatedLayers xmi:type="description_1:AdditionalLayer" href="platform:/plugin/org.sirius.component.design/description/component.odesign#//@ownedViewpoints[name='ComponentDefinitionViewpoint']/@ownedRepresentations[name='ComponentDefinitionDiagram']/@additionalLayers[name='SeRoNet']"/>
+    <target xmi:type="ComponentDefinition:ComponentDefModel" href="model/ZeroCamera.component#/"/>
+  </diagram:DSemanticDiagram>
+</xmi:XMI>
