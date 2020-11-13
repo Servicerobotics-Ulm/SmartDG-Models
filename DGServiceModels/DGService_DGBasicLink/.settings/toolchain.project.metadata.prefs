@@ -1,0 +1,6 @@
+DGService_DGBasicLink/BaseURI/value/0=http\://www.servicerobotik-ulm.de
+DGService_DGBasicLink/Homepage/value/2=http\://www.servicerobotik-ulm.de
+DGService_DGBasicLink/Purpose/value/3=Default domain-specific service used in SmartDG projects when no other service is applicable.
+DGService_DGBasicLink/Supplier/value/1=Servicerobotics Ulm, Germany
+DGService_DGBasicLink/shortDescription=SmartDG Basic Link Service.
+eclipse.preferences.version=1

@@ -1,0 +1,26 @@
+/** 
+\class DGService_DGBasicLink::DGBasicLinkObjectCore
+
+Structure of Communication Object:
+- name: String 
+
+
+
+
+@defgroup DGService_DGBasicLink
+@ingroup commObjGroup
+@{
+\page DGService_DGBasicLinkPage DGService_DGBasicLink
+Class Reference: DGService_DGBasicLink
+<hr>
+
+@section DGBasicLinkObject DGBasicLinkObject
+- name: String  
+
+Class Reference: DGService_DGBasicLink::DGBasicLinkObjectCore
+<hr>
+
+
+@}
+*/
+
