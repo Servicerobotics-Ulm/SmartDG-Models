@@ -41,9 +41,9 @@ private:
 	unsigned int currentUpdateCount;
 	
 	Smart::StatusCode bWMapStatus;
-	DomainVision::CommVideoImage bWMapObject;
+	DGService_DGBasicLink::DGBasicLinkObject bWMapObject;
 	Smart::StatusCode mapStatus;
-	DomainVision::CommVideoImage mapObject;
+	DGService_DGBasicLink::DGBasicLinkObject mapObject;
 	
 	
 protected:
@@ -57,24 +57,24 @@ protected:
 	
 	
 	// overload and implement this method in derived classes to immediately get all incoming updates from BWMap (as soon as they arrive)
-	virtual void on_BWMap(const DomainVision::CommVideoImage &input) {
+	virtual void on_BWMap(const DGService_DGBasicLink::DGBasicLinkObject &input) {
 		// no-op
 	}
 	
 	// this method can be safely used from the thread in derived classes
-	inline Smart::StatusCode bWMapGetUpdate(DomainVision::CommVideoImage &bWMapObject) const
+	inline Smart::StatusCode bWMapGetUpdate(DGService_DGBasicLink::DGBasicLinkObject &bWMapObject) const
 	{
 		// copy local object buffer and return the last status code
 		bWMapObject = this->bWMapObject;
 		return bWMapStatus;
 	}
 	// overload and implement this method in derived classes to immediately get all incoming updates from Map (as soon as they arrive)
-	virtual void on_Map(const DomainVision::CommVideoImage &input) {
+	virtual void on_Map(const DGService_DGBasicLink::DGBasicLinkObject &input) {
 		// no-op
 	}
 	
 	// this method can be safely used from the thread in derived classes
-	inline Smart::StatusCode mapGetUpdate(DomainVision::CommVideoImage &mapObject) const
+	inline Smart::StatusCode mapGetUpdate(DGService_DGBasicLink::DGBasicLinkObject &mapObject) const
 	{
 		// copy local object buffer and return the last status code
 		mapObject = this->mapObject;

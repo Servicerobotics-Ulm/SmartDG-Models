@@ -66,27 +66,27 @@ ComponentDefinition TwoMapMaker logo "/TwoMapMaker/model/logo.png"
 		InputPortLink GrayImage2 { oversamplingOk undersamplingOk }
 	}
 	Activity ImageJoiner{}
-	OutputPort RGBMap implements DomainVision.RGBImagePushService realizedBy ImageJoiner {
+	OutputPort RGBMap implements DGService_DGBasicLink.DGBasicLink realizedBy ImageJoiner {
 		ComponentDependencyObject "DGPrivacy" 
 		ComponentDependencyObject "DGSecurity"
 	}
-	OutputPort GrayMap implements DomainVision.RGBImagePushService realizedBy ImageJoiner {
+	OutputPort GrayMap implements DGService_DGBasicLink.DGBasicLink realizedBy ImageJoiner {
 		ComponentDependencyObject "DGPrivacy" 
 		ComponentDependencyObject "DGSecurity"
 	}
-	InputPort Image1 implements DomainVision.RGBImagePushService {
+	InputPort Image1 implements DGService_DGBasicLink.DGBasicLink {
 		ComponentDependencyObject "DGPrivacy" 
 		ComponentDependencyObject "DGSecurity"
 	}
-	InputPort Image2 implements DomainVision.RGBImagePushService {
+	InputPort Image2 implements DGService_DGBasicLink.DGBasicLink {
 		ComponentDependencyObject "DGPrivacy" 
 		ComponentDependencyObject "DGSecurity"
 	}
-	InputPort GrayImage1 implements DomainVision.RGBImagePushService {
+	InputPort GrayImage1 implements DGService_DGBasicLink.DGBasicLink {
 		ComponentDependencyObject "DGPrivacy" 
 		ComponentDependencyObject "DGSecurity"
 	}
-	InputPort GrayImage2 implements DomainVision.RGBImagePushService {
+	InputPort GrayImage2 implements DGService_DGBasicLink.DGBasicLink {
 		ComponentDependencyObject "DGPrivacy" 
 		ComponentDependencyObject "DGSecurity"
 	}

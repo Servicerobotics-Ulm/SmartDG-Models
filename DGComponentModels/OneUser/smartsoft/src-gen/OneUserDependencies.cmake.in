@@ -15,6 +15,6 @@
 #--------------------------------------------------------------------------
 
 # other CommunicationObject-dependencies are added here (if there are any)
-LIST(APPEND OneUser_DEPENDENCIES DomainVision)
+LIST(APPEND OneUser_DEPENDENCIES DGService_DGBasicLink)
 
 LIST(REMOVE_DUPLICATES OneUser_DEPENDENCIES)

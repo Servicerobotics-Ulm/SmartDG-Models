@@ -22,6 +22,8 @@
 class ImageCollector  : public ImageCollectorCore
 {
 private:
+	virtual void on_Image1(const DGService_DGBasicLink::DGBasicLinkObject &input);
+	virtual void on_Image2(const DGService_DGBasicLink::DGBasicLinkObject &input);
 public:
 	ImageCollector(SmartACE::SmartComponent *comp);
 	virtual ~ImageCollector();

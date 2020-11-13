@@ -57,11 +57,11 @@ ComponentDefinition ZeroCamera logo "/ZeroCamera/model/logo.png"
 {
 	Activity ImageCapture{}
 	Activity rgb2gray{}
-	OutputPort RGBImage implements DomainVision.RGBImagePushService realizedBy ImageCapture {
+	OutputPort RGBImage implements DGService_DGBasicLink.DGBasicLink realizedBy ImageCapture {
 		ComponentDependencyObject "DGPrivacy" 
 		ComponentDependencyObject "DGSecurity"
 	}
-	OutputPort GrayImage implements DomainVision.RGBImagePushService realizedBy rgb2gray {
+	OutputPort GrayImage implements DGService_DGBasicLink.DGBasicLink realizedBy rgb2gray {
 		ComponentDependencyObject "DGPrivacy" 
 		ComponentDependencyObject "DGSecurity"
 	}

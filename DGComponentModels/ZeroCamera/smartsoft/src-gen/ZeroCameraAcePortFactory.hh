@@ -35,8 +35,8 @@ public:
 	virtual int onStartup() override;
 
 	
-	virtual Smart::IPushServerPattern<DomainVision::CommVideoImage> * createGrayImage(const std::string &serviceName) override;
-	virtual Smart::IPushServerPattern<DomainVision::CommVideoImage> * createRGBImage(const std::string &serviceName) override;
+	virtual Smart::IPushServerPattern<DGService_DGBasicLink::DGBasicLinkObject> * createGrayImage(const std::string &serviceName) override;
+	virtual Smart::IPushServerPattern<DGService_DGBasicLink::DGBasicLinkObject> * createRGBImage(const std::string &serviceName) override;
 	
 	// get a pointer to the internal component implementation
 	SmartACE::SmartComponent* getComponentImpl();

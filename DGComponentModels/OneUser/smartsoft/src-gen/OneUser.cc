@@ -229,9 +229,9 @@ void OneUser::init(int argc, char *argv[])
 		map = portFactoryRegistry[connections.map.roboticMiddleware]->createMap();
 		
 		// create InputTaskTriggers and UpcallManagers
-		bWMapInputTaskTrigger = new Smart::InputTaskTrigger<DomainVision::CommVideoImage>(bWMap);
+		bWMapInputTaskTrigger = new Smart::InputTaskTrigger<DGService_DGBasicLink::DGBasicLinkObject>(bWMap);
 		bWMapUpcallManager = new BWMapUpcallManager(bWMap);
-		mapInputTaskTrigger = new Smart::InputTaskTrigger<DomainVision::CommVideoImage>(map);
+		mapInputTaskTrigger = new Smart::InputTaskTrigger<DGService_DGBasicLink::DGBasicLinkObject>(map);
 		mapUpcallManager = new MapUpcallManager(map);
 		
 		// create input-handler
@@ -251,11 +251,11 @@ void OneUser::init(int argc, char *argv[])
 		// add client port to wiring slave
 		if(connections.bWMap.roboticMiddleware == "ACE_SmartSoft") {
 			//FIXME: this must also work with other implementations
-			dynamic_cast<SmartACE::PushClient<DomainVision::CommVideoImage>*>(bWMap)->add(wiringSlave, connections.bWMap.wiringName);
+			dynamic_cast<SmartACE::PushClient<DGService_DGBasicLink::DGBasicLinkObject>*>(bWMap)->add(wiringSlave, connections.bWMap.wiringName);
 		}
 		if(connections.map.roboticMiddleware == "ACE_SmartSoft") {
 			//FIXME: this must also work with other implementations
-			dynamic_cast<SmartACE::PushClient<DomainVision::CommVideoImage>*>(map)->add(wiringSlave, connections.map.wiringName);
+			dynamic_cast<SmartACE::PushClient<DGService_DGBasicLink::DGBasicLinkObject>*>(map)->add(wiringSlave, connections.map.wiringName);
 		}
 		
 		

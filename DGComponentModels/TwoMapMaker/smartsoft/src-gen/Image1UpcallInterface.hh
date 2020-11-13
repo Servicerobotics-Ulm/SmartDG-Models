@@ -16,13 +16,13 @@
 #ifndef _IMAGE1_UPCALL_INTERFACE_HH
 #define _IMAGE1_UPCALL_INTERFACE_HH
 
-#include "DomainVision/CommVideoImage.hh"
+#include "DGService_DGBasicLink/DGBasicLinkObject.hh"
 
 class Image1UpcallInterface {
 public:
 	virtual ~Image1UpcallInterface() {  }
 
-	virtual void on_Image1(const DomainVision::CommVideoImage &input) = 0;
+	virtual void on_Image1(const DGService_DGBasicLink::DGBasicLinkObject &input) = 0;
 };
 
 #endif

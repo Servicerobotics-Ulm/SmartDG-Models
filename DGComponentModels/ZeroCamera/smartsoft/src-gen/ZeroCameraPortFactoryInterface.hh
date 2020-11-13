@@ -18,8 +18,8 @@
 #define ZEROCAMERA_PORTFACTORYINTERFACE_HH_
 
 // include communication objects
-#include <DomainVision/CommVideoImage.hh>
-#include <DomainVision/CommVideoImageACE.hh>
+#include <DGService_DGBasicLink/DGBasicLinkObject.hh>
+#include <DGService_DGBasicLink/DGBasicLinkObjectACE.hh>
 
 #include <chrono>
 
@@ -38,8 +38,8 @@ public:
 	virtual int onStartup() = 0;
 
 	
-	virtual Smart::IPushServerPattern<DomainVision::CommVideoImage> * createGrayImage(const std::string &serviceName) = 0;
-	virtual Smart::IPushServerPattern<DomainVision::CommVideoImage> * createRGBImage(const std::string &serviceName) = 0;
+	virtual Smart::IPushServerPattern<DGService_DGBasicLink::DGBasicLinkObject> * createGrayImage(const std::string &serviceName) = 0;
+	virtual Smart::IPushServerPattern<DGService_DGBasicLink::DGBasicLinkObject> * createRGBImage(const std::string &serviceName) = 0;
 
 	virtual int onShutdown(const std::chrono::steady_clock::duration &timeoutTime=std::chrono::seconds(2)) = 0;
 	virtual void destroy() = 0;

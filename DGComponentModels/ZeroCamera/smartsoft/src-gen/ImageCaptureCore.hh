@@ -21,7 +21,7 @@
 // include upcall interface
 
 // include communication-objects for output ports
-#include <DomainVision/CommVideoImage.hh>
+#include <DGService_DGBasicLink/DGBasicLinkObject.hh>
 
 // include all interaction-observer interfaces
 #include <ImageCaptureObserverInterface.hh>
@@ -51,7 +51,7 @@ protected:
 	
 	
 	// this method is meant to be used in derived classes
-	Smart::StatusCode rGBImagePut(DomainVision::CommVideoImage &rGBImageDataObject);
+	Smart::StatusCode rGBImagePut(DGService_DGBasicLink::DGBasicLinkObject &rGBImageDataObject);
 	
 	
 /**

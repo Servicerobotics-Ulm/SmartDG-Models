@@ -16,13 +16,13 @@
 #ifndef _MAP_UPCALL_INTERFACE_HH
 #define _MAP_UPCALL_INTERFACE_HH
 
-#include "DomainVision/CommVideoImage.hh"
+#include "DGService_DGBasicLink/DGBasicLinkObject.hh"
 
 class MapUpcallInterface {
 public:
 	virtual ~MapUpcallInterface() {  }
 
-	virtual void on_Map(const DomainVision::CommVideoImage &input) = 0;
+	virtual void on_Map(const DGService_DGBasicLink::DGBasicLinkObject &input) = 0;
 };
 
 #endif

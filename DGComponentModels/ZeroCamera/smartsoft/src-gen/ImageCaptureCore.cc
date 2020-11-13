@@ -92,7 +92,7 @@ void ImageCaptureCore::updateAllCommObjects()
 
 
 // this method is meant to be used in derived classes
-Smart::StatusCode ImageCaptureCore::rGBImagePut(DomainVision::CommVideoImage &rGBImageDataObject)
+Smart::StatusCode ImageCaptureCore::rGBImagePut(DGService_DGBasicLink::DGBasicLinkObject &rGBImageDataObject)
 {
 	Smart::StatusCode result = COMP->rGBImage->put(rGBImageDataObject);
 	if(useLogging == true) {

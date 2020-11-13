@@ -30,6 +30,22 @@ GrayImageCollector::~GrayImageCollector()
 }
 
 
+void GrayImageCollector::on_GrayImage1(const DGService_DGBasicLink::DGBasicLinkObject &input)
+{
+	// upcall triggered from InputPort GrayImage1
+	// - use a local mutex here, because this upcal is called asynchroneously from outside of this task
+	// - do not use longer blocking calls here since this upcall blocks the InputPort GrayImage1
+	// - if you need to implement a long-running procedure, do so within the on_execute() method and in
+	//   there, use the method grayImage1GetUpdate(input) to get a copy of the input object
+}
+void GrayImageCollector::on_GrayImage2(const DGService_DGBasicLink::DGBasicLinkObject &input)
+{
+	// upcall triggered from InputPort GrayImage2
+	// - use a local mutex here, because this upcal is called asynchroneously from outside of this task
+	// - do not use longer blocking calls here since this upcall blocks the InputPort GrayImage2
+	// - if you need to implement a long-running procedure, do so within the on_execute() method and in
+	//   there, use the method grayImage2GetUpdate(input) to get a copy of the input object
+}
 int GrayImageCollector::on_entry()
 {
 	// do initialization procedures here, which are called once, each time the task is started
@@ -44,6 +60,22 @@ int GrayImageCollector::on_execute()
 	
 	// to get the incoming data, use this methods:
 	Smart::StatusCode status;
+	DGService_DGBasicLink::DGBasicLinkObject grayImage1Object;
+	status = this->grayImage1GetUpdate(grayImage1Object);
+	if(status != Smart::SMART_OK) {
+		std::cerr << status << std::endl;
+		// return 0;
+	} else {
+		std::cout << "received: " << grayImage1Object << std::endl;
+	}
+	DGService_DGBasicLink::DGBasicLinkObject grayImage2Object;
+	status = this->grayImage2GetUpdate(grayImage2Object);
+	if(status != Smart::SMART_OK) {
+		std::cerr << status << std::endl;
+		// return 0;
+	} else {
+		std::cout << "received: " << grayImage2Object << std::endl;
+	}
 
 	std::cout << "Hello from GrayImageCollector " << std::endl;
 

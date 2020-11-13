@@ -16,13 +16,13 @@
 #ifndef _GRAYIMAGE2_UPCALL_INTERFACE_HH
 #define _GRAYIMAGE2_UPCALL_INTERFACE_HH
 
-#include "DomainVision/CommVideoImage.hh"
+#include "DGService_DGBasicLink/DGBasicLinkObject.hh"
 
 class GrayImage2UpcallInterface {
 public:
 	virtual ~GrayImage2UpcallInterface() {  }
 
-	virtual void on_GrayImage2(const DomainVision::CommVideoImage &input) = 0;
+	virtual void on_GrayImage2(const DGService_DGBasicLink::DGBasicLinkObject &input) = 0;
 };
 
 #endif

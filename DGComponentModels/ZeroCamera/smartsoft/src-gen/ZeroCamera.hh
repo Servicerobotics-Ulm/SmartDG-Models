@@ -35,8 +35,8 @@ class ZeroCameraExtension;
 
 
 // include communication objects
-#include <DomainVision/CommVideoImage.hh>
-#include <DomainVision/CommVideoImageACE.hh>
+#include <DGService_DGBasicLink/DGBasicLinkObject.hh>
+#include <DGService_DGBasicLink/DGBasicLinkObjectACE.hh>
 
 // include tasks
 #include "ImageCapture.hh"
@@ -97,8 +97,8 @@ public:
 	// define input-handler
 	
 	// define output-ports
-	Smart::IPushServerPattern<DomainVision::CommVideoImage> *grayImage;
-	Smart::IPushServerPattern<DomainVision::CommVideoImage> *rGBImage;
+	Smart::IPushServerPattern<DGService_DGBasicLink::DGBasicLinkObject> *grayImage;
+	Smart::IPushServerPattern<DGService_DGBasicLink::DGBasicLinkObject> *rGBImage;
 	
 	// define answer-ports
 	

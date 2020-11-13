@@ -92,7 +92,7 @@ void Rgb2grayCore::updateAllCommObjects()
 
 
 // this method is meant to be used in derived classes
-Smart::StatusCode Rgb2grayCore::grayImagePut(DomainVision::CommVideoImage &grayImageDataObject)
+Smart::StatusCode Rgb2grayCore::grayImagePut(DGService_DGBasicLink::DGBasicLinkObject &grayImageDataObject)
 {
 	Smart::StatusCode result = COMP->grayImage->put(grayImageDataObject);
 	if(useLogging == true) {

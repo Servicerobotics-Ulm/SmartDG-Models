@@ -30,6 +30,22 @@ ImageViewer::~ImageViewer()
 }
 
 
+void ImageViewer::on_BWMap(const DGService_DGBasicLink::DGBasicLinkObject &input)
+{
+	// upcall triggered from InputPort BWMap
+	// - use a local mutex here, because this upcal is called asynchroneously from outside of this task
+	// - do not use longer blocking calls here since this upcall blocks the InputPort BWMap
+	// - if you need to implement a long-running procedure, do so within the on_execute() method and in
+	//   there, use the method bWMapGetUpdate(input) to get a copy of the input object
+}
+void ImageViewer::on_Map(const DGService_DGBasicLink::DGBasicLinkObject &input)
+{
+	// upcall triggered from InputPort Map
+	// - use a local mutex here, because this upcal is called asynchroneously from outside of this task
+	// - do not use longer blocking calls here since this upcall blocks the InputPort Map
+	// - if you need to implement a long-running procedure, do so within the on_execute() method and in
+	//   there, use the method mapGetUpdate(input) to get a copy of the input object
+}
 int ImageViewer::on_entry()
 {
 	// do initialization procedures here, which are called once, each time the task is started
@@ -44,6 +60,22 @@ int ImageViewer::on_execute()
 	
 	// to get the incoming data, use this methods:
 	Smart::StatusCode status;
+	DGService_DGBasicLink::DGBasicLinkObject bWMapObject;
+	status = this->bWMapGetUpdate(bWMapObject);
+	if(status != Smart::SMART_OK) {
+		std::cerr << status << std::endl;
+		// return 0;
+	} else {
+		std::cout << "received: " << bWMapObject << std::endl;
+	}
+	DGService_DGBasicLink::DGBasicLinkObject mapObject;
+	status = this->mapGetUpdate(mapObject);
+	if(status != Smart::SMART_OK) {
+		std::cerr << status << std::endl;
+		// return 0;
+	} else {
+		std::cout << "received: " << mapObject << std::endl;
+	}
 
 	std::cout << "Hello from ImageViewer " << std::endl;
 

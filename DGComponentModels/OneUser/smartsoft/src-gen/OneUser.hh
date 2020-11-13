@@ -35,8 +35,8 @@ class OneUserExtension;
 
 
 // include communication objects
-#include <DomainVision/CommVideoImage.hh>
-#include <DomainVision/CommVideoImageACE.hh>
+#include <DGService_DGBasicLink/DGBasicLinkObject.hh>
+#include <DGService_DGBasicLink/DGBasicLinkObjectACE.hh>
 
 // include tasks
 #include "ImageViewer.hh"
@@ -91,12 +91,12 @@ public:
 	
 	// define input-ports
 	// InputPort BWMap
-	Smart::IPushClientPattern<DomainVision::CommVideoImage> *bWMap;
-	Smart::InputTaskTrigger<DomainVision::CommVideoImage> *bWMapInputTaskTrigger;
+	Smart::IPushClientPattern<DGService_DGBasicLink::DGBasicLinkObject> *bWMap;
+	Smart::InputTaskTrigger<DGService_DGBasicLink::DGBasicLinkObject> *bWMapInputTaskTrigger;
 	BWMapUpcallManager *bWMapUpcallManager;
 	// InputPort Map
-	Smart::IPushClientPattern<DomainVision::CommVideoImage> *map;
-	Smart::InputTaskTrigger<DomainVision::CommVideoImage> *mapInputTaskTrigger;
+	Smart::IPushClientPattern<DGService_DGBasicLink::DGBasicLinkObject> *map;
+	Smart::InputTaskTrigger<DGService_DGBasicLink::DGBasicLinkObject> *mapInputTaskTrigger;
 	MapUpcallManager *mapUpcallManager;
 	
 	// define request-ports

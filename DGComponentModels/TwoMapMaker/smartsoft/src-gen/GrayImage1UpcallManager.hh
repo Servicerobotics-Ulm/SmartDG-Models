@@ -26,23 +26,23 @@
  * of incoming data to all associated (i.e. attached) Upcalls.
  */
 class GrayImage1UpcallManager
-:	public Smart::IInputHandler<DomainVision::CommVideoImage>
+:	public Smart::IInputHandler<DGService_DGBasicLink::DGBasicLinkObject>
 {
 private:
 	// list of associated updalls
 	std::list<GrayImage1UpcallInterface*> upcalls;
 
 	// call the on_GrayImage1 of all the attached GrayImage1UpcallInterfaces
-	void notify_upcalls(const DomainVision::CommVideoImage &input);
+	void notify_upcalls(const DGService_DGBasicLink::DGBasicLinkObject &input);
 	
 protected:
-	virtual void handle_input(const DomainVision::CommVideoImage &input) {
+	virtual void handle_input(const DGService_DGBasicLink::DGBasicLinkObject &input) {
 		// relay input-handling to all attached GrayImage1UpcallInterfaces
 		this->notify_upcalls(input);
 	}
 public:
 	GrayImage1UpcallManager(
-		Smart::InputSubject<DomainVision::CommVideoImage> *subject,
+		Smart::InputSubject<DGService_DGBasicLink::DGBasicLinkObject> *subject,
 		const int &prescaleFactor=1
 	);
 	virtual ~GrayImage1UpcallManager();

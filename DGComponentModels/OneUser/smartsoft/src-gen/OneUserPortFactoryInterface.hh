@@ -18,8 +18,8 @@
 #define ONEUSER_PORTFACTORYINTERFACE_HH_
 
 // include communication objects
-#include <DomainVision/CommVideoImage.hh>
-#include <DomainVision/CommVideoImageACE.hh>
+#include <DGService_DGBasicLink/DGBasicLinkObject.hh>
+#include <DGService_DGBasicLink/DGBasicLinkObjectACE.hh>
 
 #include <chrono>
 
@@ -37,8 +37,8 @@ public:
 	virtual void initialize(OneUser *component, int argc, char* argv[]) = 0;
 	virtual int onStartup() = 0;
 
-	virtual Smart::IPushClientPattern<DomainVision::CommVideoImage> * createBWMap() = 0;
-	virtual Smart::IPushClientPattern<DomainVision::CommVideoImage> * createMap() = 0;
+	virtual Smart::IPushClientPattern<DGService_DGBasicLink::DGBasicLinkObject> * createBWMap() = 0;
+	virtual Smart::IPushClientPattern<DGService_DGBasicLink::DGBasicLinkObject> * createMap() = 0;
 	
 
 	virtual int onShutdown(const std::chrono::steady_clock::duration &timeoutTime=std::chrono::seconds(2)) = 0;

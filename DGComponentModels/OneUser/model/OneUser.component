@@ -60,11 +60,11 @@ Activity ImageViewer
 		InputPortLink Map { oversamplingOk undersamplingOk }
 		InputPortLink BWMap { oversamplingOk undersamplingOk }
 	}
-	InputPort Map implements DomainVision.RGBImagePushService {
+	InputPort Map implements DGService_DGBasicLink.DGBasicLink {
 		ComponentDependencyObject "DGPrivacy" 
 		ComponentDependencyObject "DGSecurity"
 	}
-	InputPort BWMap implements DomainVision.RGBImagePushService {
+	InputPort BWMap implements DGService_DGBasicLink.DGBasicLink {
 		ComponentDependencyObject "DGPrivacy" 
 		ComponentDependencyObject "DGSecurity"
 	}

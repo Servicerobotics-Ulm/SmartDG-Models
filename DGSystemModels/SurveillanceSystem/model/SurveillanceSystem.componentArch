@@ -53,7 +53,7 @@
 //  https://opensource.org/licenses/BSD-3-Clause
 //
 //================================================================
-SystemComponentArchitecture SurveillanceSystem
+SystemComponentArchitecture SurveillanceSystem usingActivityArchitecture SurveillanceSystem
 {
 	ComponentInstance Cam1 instantiates ZeroCamera
 	{
@@ -65,7 +65,7 @@ SystemComponentArchitecture SurveillanceSystem
 		ProvidedService RGBImage
 		ProvidedService GrayImage
 	}
-ComponentInstance Mapper instantiates TwoMapMaker
+	ComponentInstance Mapper instantiates TwoMapMaker
 	{
 		RequiredService Image1
 		RequiredService Image2

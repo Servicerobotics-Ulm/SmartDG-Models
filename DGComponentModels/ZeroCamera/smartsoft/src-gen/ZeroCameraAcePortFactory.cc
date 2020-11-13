@@ -53,14 +53,14 @@ int ZeroCameraAcePortFactory::onStartup()
 }
 
 
-Smart::IPushServerPattern<DomainVision::CommVideoImage> * ZeroCameraAcePortFactory::createGrayImage(const std::string &serviceName)
+Smart::IPushServerPattern<DGService_DGBasicLink::DGBasicLinkObject> * ZeroCameraAcePortFactory::createGrayImage(const std::string &serviceName)
 {
-	return new SmartACE::PushServer<DomainVision::CommVideoImage>(componentImpl, serviceName);
+	return new SmartACE::PushServer<DGService_DGBasicLink::DGBasicLinkObject>(componentImpl, serviceName);
 }
 
-Smart::IPushServerPattern<DomainVision::CommVideoImage> * ZeroCameraAcePortFactory::createRGBImage(const std::string &serviceName)
+Smart::IPushServerPattern<DGService_DGBasicLink::DGBasicLinkObject> * ZeroCameraAcePortFactory::createRGBImage(const std::string &serviceName)
 {
-	return new SmartACE::PushServer<DomainVision::CommVideoImage>(componentImpl, serviceName);
+	return new SmartACE::PushServer<DGService_DGBasicLink::DGBasicLinkObject>(componentImpl, serviceName);
 }
 
 

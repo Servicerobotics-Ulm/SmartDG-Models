@@ -22,6 +22,8 @@
 class ImageViewer  : public ImageViewerCore
 {
 private:
+	virtual void on_BWMap(const DGService_DGBasicLink::DGBasicLinkObject &input);
+	virtual void on_Map(const DGService_DGBasicLink::DGBasicLinkObject &input);
 public:
 	ImageViewer(SmartACE::SmartComponent *comp);
 	virtual ~ImageViewer();

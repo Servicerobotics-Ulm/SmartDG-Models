@@ -52,35 +52,35 @@ int TwoMapMakerAcePortFactory::onStartup()
 	return componentImpl->startComponentInfrastructure();
 }
 
-Smart::IPushClientPattern<DomainVision::CommVideoImage> * TwoMapMakerAcePortFactory::createGrayImage1()
+Smart::IPushClientPattern<DGService_DGBasicLink::DGBasicLinkObject> * TwoMapMakerAcePortFactory::createGrayImage1()
 {
-	return new SmartACE::PushClient<DomainVision::CommVideoImage>(componentImpl);
+	return new SmartACE::PushClient<DGService_DGBasicLink::DGBasicLinkObject>(componentImpl);
 }
 
-Smart::IPushClientPattern<DomainVision::CommVideoImage> * TwoMapMakerAcePortFactory::createGrayImage2()
+Smart::IPushClientPattern<DGService_DGBasicLink::DGBasicLinkObject> * TwoMapMakerAcePortFactory::createGrayImage2()
 {
-	return new SmartACE::PushClient<DomainVision::CommVideoImage>(componentImpl);
+	return new SmartACE::PushClient<DGService_DGBasicLink::DGBasicLinkObject>(componentImpl);
 }
 
-Smart::IPushClientPattern<DomainVision::CommVideoImage> * TwoMapMakerAcePortFactory::createImage1()
+Smart::IPushClientPattern<DGService_DGBasicLink::DGBasicLinkObject> * TwoMapMakerAcePortFactory::createImage1()
 {
-	return new SmartACE::PushClient<DomainVision::CommVideoImage>(componentImpl);
+	return new SmartACE::PushClient<DGService_DGBasicLink::DGBasicLinkObject>(componentImpl);
 }
 
-Smart::IPushClientPattern<DomainVision::CommVideoImage> * TwoMapMakerAcePortFactory::createImage2()
+Smart::IPushClientPattern<DGService_DGBasicLink::DGBasicLinkObject> * TwoMapMakerAcePortFactory::createImage2()
 {
-	return new SmartACE::PushClient<DomainVision::CommVideoImage>(componentImpl);
+	return new SmartACE::PushClient<DGService_DGBasicLink::DGBasicLinkObject>(componentImpl);
 }
 
 
-Smart::IPushServerPattern<DomainVision::CommVideoImage> * TwoMapMakerAcePortFactory::createGrayMap(const std::string &serviceName)
+Smart::IPushServerPattern<DGService_DGBasicLink::DGBasicLinkObject> * TwoMapMakerAcePortFactory::createGrayMap(const std::string &serviceName)
 {
-	return new SmartACE::PushServer<DomainVision::CommVideoImage>(componentImpl, serviceName);
+	return new SmartACE::PushServer<DGService_DGBasicLink::DGBasicLinkObject>(componentImpl, serviceName);
 }
 
-Smart::IPushServerPattern<DomainVision::CommVideoImage> * TwoMapMakerAcePortFactory::createRGBMap(const std::string &serviceName)
+Smart::IPushServerPattern<DGService_DGBasicLink::DGBasicLinkObject> * TwoMapMakerAcePortFactory::createRGBMap(const std::string &serviceName)
 {
-	return new SmartACE::PushServer<DomainVision::CommVideoImage>(componentImpl, serviceName);
+	return new SmartACE::PushServer<DGService_DGBasicLink::DGBasicLinkObject>(componentImpl, serviceName);
 }
 
 

@@ -92,7 +92,7 @@ void ImageJoinerCore::updateAllCommObjects()
 
 
 // this method is meant to be used in derived classes
-Smart::StatusCode ImageJoinerCore::grayMapPut(DomainVision::CommVideoImage &grayMapDataObject)
+Smart::StatusCode ImageJoinerCore::grayMapPut(DGService_DGBasicLink::DGBasicLinkObject &grayMapDataObject)
 {
 	Smart::StatusCode result = COMP->grayMap->put(grayMapDataObject);
 	if(useLogging == true) {
@@ -102,7 +102,7 @@ Smart::StatusCode ImageJoinerCore::grayMapPut(DomainVision::CommVideoImage &gray
 	return result;
 }
 // this method is meant to be used in derived classes
-Smart::StatusCode ImageJoinerCore::rGBMapPut(DomainVision::CommVideoImage &rGBMapDataObject)
+Smart::StatusCode ImageJoinerCore::rGBMapPut(DGService_DGBasicLink::DGBasicLinkObject &rGBMapDataObject)
 {
 	Smart::StatusCode result = COMP->rGBMap->put(rGBMapDataObject);
 	if(useLogging == true) {

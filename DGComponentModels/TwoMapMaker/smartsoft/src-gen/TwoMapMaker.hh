@@ -35,8 +35,8 @@ class TwoMapMakerExtension;
 
 
 // include communication objects
-#include <DomainVision/CommVideoImage.hh>
-#include <DomainVision/CommVideoImageACE.hh>
+#include <DGService_DGBasicLink/DGBasicLinkObject.hh>
+#include <DGService_DGBasicLink/DGBasicLinkObjectACE.hh>
 
 // include tasks
 #include "GrayImageCollector.hh"
@@ -99,20 +99,20 @@ public:
 	
 	// define input-ports
 	// InputPort GrayImage1
-	Smart::IPushClientPattern<DomainVision::CommVideoImage> *grayImage1;
-	Smart::InputTaskTrigger<DomainVision::CommVideoImage> *grayImage1InputTaskTrigger;
+	Smart::IPushClientPattern<DGService_DGBasicLink::DGBasicLinkObject> *grayImage1;
+	Smart::InputTaskTrigger<DGService_DGBasicLink::DGBasicLinkObject> *grayImage1InputTaskTrigger;
 	GrayImage1UpcallManager *grayImage1UpcallManager;
 	// InputPort GrayImage2
-	Smart::IPushClientPattern<DomainVision::CommVideoImage> *grayImage2;
-	Smart::InputTaskTrigger<DomainVision::CommVideoImage> *grayImage2InputTaskTrigger;
+	Smart::IPushClientPattern<DGService_DGBasicLink::DGBasicLinkObject> *grayImage2;
+	Smart::InputTaskTrigger<DGService_DGBasicLink::DGBasicLinkObject> *grayImage2InputTaskTrigger;
 	GrayImage2UpcallManager *grayImage2UpcallManager;
 	// InputPort Image1
-	Smart::IPushClientPattern<DomainVision::CommVideoImage> *image1;
-	Smart::InputTaskTrigger<DomainVision::CommVideoImage> *image1InputTaskTrigger;
+	Smart::IPushClientPattern<DGService_DGBasicLink::DGBasicLinkObject> *image1;
+	Smart::InputTaskTrigger<DGService_DGBasicLink::DGBasicLinkObject> *image1InputTaskTrigger;
 	Image1UpcallManager *image1UpcallManager;
 	// InputPort Image2
-	Smart::IPushClientPattern<DomainVision::CommVideoImage> *image2;
-	Smart::InputTaskTrigger<DomainVision::CommVideoImage> *image2InputTaskTrigger;
+	Smart::IPushClientPattern<DGService_DGBasicLink::DGBasicLinkObject> *image2;
+	Smart::InputTaskTrigger<DGService_DGBasicLink::DGBasicLinkObject> *image2InputTaskTrigger;
 	Image2UpcallManager *image2UpcallManager;
 	
 	// define request-ports
@@ -120,8 +120,8 @@ public:
 	// define input-handler
 	
 	// define output-ports
-	Smart::IPushServerPattern<DomainVision::CommVideoImage> *grayMap;
-	Smart::IPushServerPattern<DomainVision::CommVideoImage> *rGBMap;
+	Smart::IPushServerPattern<DGService_DGBasicLink::DGBasicLinkObject> *grayMap;
+	Smart::IPushServerPattern<DGService_DGBasicLink::DGBasicLinkObject> *rGBMap;
 	
 	// define answer-ports
 	

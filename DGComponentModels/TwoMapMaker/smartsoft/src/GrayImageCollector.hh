@@ -22,6 +22,8 @@
 class GrayImageCollector  : public GrayImageCollectorCore
 {
 private:
+	virtual void on_GrayImage1(const DGService_DGBasicLink::DGBasicLinkObject &input);
+	virtual void on_GrayImage2(const DGService_DGBasicLink::DGBasicLinkObject &input);
 public:
 	GrayImageCollector(SmartACE::SmartComponent *comp);
 	virtual ~GrayImageCollector();

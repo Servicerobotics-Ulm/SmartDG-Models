@@ -1,0 +1,6 @@
+ZeroCamera/BaseURI/value/0=http\://www.servicerobotik-ulm.de
+ZeroCamera/Homepage/value/2=http\://www.servicerobotik-ulm.de
+ZeroCamera/Purpose/value/3=Component used in binary dependency transmission case study
+ZeroCamera/Supplier/value/1=Servicerobotics Ulm, Germany
+ZeroCamera/shortDescription=Camera Driver software component
+eclipse.preferences.version=1

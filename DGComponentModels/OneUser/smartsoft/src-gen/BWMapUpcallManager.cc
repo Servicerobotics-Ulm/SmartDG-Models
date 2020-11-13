@@ -16,14 +16,14 @@
 #include "BWMapUpcallManager.hh"
 
 BWMapUpcallManager::BWMapUpcallManager(
-	Smart::InputSubject<DomainVision::CommVideoImage> *subject,
+	Smart::InputSubject<DGService_DGBasicLink::DGBasicLinkObject> *subject,
 	const int &prescaleFactor)
-	:	Smart::IInputHandler<DomainVision::CommVideoImage>(subject, prescaleFactor)
+	:	Smart::IInputHandler<DGService_DGBasicLink::DGBasicLinkObject>(subject, prescaleFactor)
 {  }
 BWMapUpcallManager::~BWMapUpcallManager()
 {  }
 
-void BWMapUpcallManager::notify_upcalls(const DomainVision::CommVideoImage &input)
+void BWMapUpcallManager::notify_upcalls(const DGService_DGBasicLink::DGBasicLinkObject &input)
 {
 	for(auto it=upcalls.begin(); it!=upcalls.end(); it++) {
 		(*it)->on_BWMap(input);

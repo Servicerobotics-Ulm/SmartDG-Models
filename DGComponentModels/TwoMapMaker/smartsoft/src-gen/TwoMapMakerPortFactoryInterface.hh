@@ -18,8 +18,8 @@
 #define TWOMAPMAKER_PORTFACTORYINTERFACE_HH_
 
 // include communication objects
-#include <DomainVision/CommVideoImage.hh>
-#include <DomainVision/CommVideoImageACE.hh>
+#include <DGService_DGBasicLink/DGBasicLinkObject.hh>
+#include <DGService_DGBasicLink/DGBasicLinkObjectACE.hh>
 
 #include <chrono>
 
@@ -37,13 +37,13 @@ public:
 	virtual void initialize(TwoMapMaker *component, int argc, char* argv[]) = 0;
 	virtual int onStartup() = 0;
 
-	virtual Smart::IPushClientPattern<DomainVision::CommVideoImage> * createGrayImage1() = 0;
-	virtual Smart::IPushClientPattern<DomainVision::CommVideoImage> * createGrayImage2() = 0;
-	virtual Smart::IPushClientPattern<DomainVision::CommVideoImage> * createImage1() = 0;
-	virtual Smart::IPushClientPattern<DomainVision::CommVideoImage> * createImage2() = 0;
+	virtual Smart::IPushClientPattern<DGService_DGBasicLink::DGBasicLinkObject> * createGrayImage1() = 0;
+	virtual Smart::IPushClientPattern<DGService_DGBasicLink::DGBasicLinkObject> * createGrayImage2() = 0;
+	virtual Smart::IPushClientPattern<DGService_DGBasicLink::DGBasicLinkObject> * createImage1() = 0;
+	virtual Smart::IPushClientPattern<DGService_DGBasicLink::DGBasicLinkObject> * createImage2() = 0;
 	
-	virtual Smart::IPushServerPattern<DomainVision::CommVideoImage> * createGrayMap(const std::string &serviceName) = 0;
-	virtual Smart::IPushServerPattern<DomainVision::CommVideoImage> * createRGBMap(const std::string &serviceName) = 0;
+	virtual Smart::IPushServerPattern<DGService_DGBasicLink::DGBasicLinkObject> * createGrayMap(const std::string &serviceName) = 0;
+	virtual Smart::IPushServerPattern<DGService_DGBasicLink::DGBasicLinkObject> * createRGBMap(const std::string &serviceName) = 0;
 
 	virtual int onShutdown(const std::chrono::steady_clock::duration &timeoutTime=std::chrono::seconds(2)) = 0;
 	virtual void destroy() = 0;

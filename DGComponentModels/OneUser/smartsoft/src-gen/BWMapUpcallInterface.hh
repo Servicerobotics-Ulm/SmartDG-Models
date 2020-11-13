@@ -16,13 +16,13 @@
 #ifndef _BWMAP_UPCALL_INTERFACE_HH
 #define _BWMAP_UPCALL_INTERFACE_HH
 
-#include "DomainVision/CommVideoImage.hh"
+#include "DGService_DGBasicLink/DGBasicLinkObject.hh"
 
 class BWMapUpcallInterface {
 public:
 	virtual ~BWMapUpcallInterface() {  }
 
-	virtual void on_BWMap(const DomainVision::CommVideoImage &input) = 0;
+	virtual void on_BWMap(const DGService_DGBasicLink::DGBasicLinkObject &input) = 0;
 };
 
 #endif

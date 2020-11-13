@@ -15,6 +15,6 @@
 #--------------------------------------------------------------------------
 
 # other CommunicationObject-dependencies are added here (if there are any)
-LIST(APPEND ZeroCamera_DEPENDENCIES DomainVision)
+LIST(APPEND ZeroCamera_DEPENDENCIES DGService_DGBasicLink)
 
 LIST(REMOVE_DUPLICATES ZeroCamera_DEPENDENCIES)

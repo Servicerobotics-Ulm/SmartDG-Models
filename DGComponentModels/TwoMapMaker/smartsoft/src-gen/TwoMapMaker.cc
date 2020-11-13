@@ -333,13 +333,13 @@ void TwoMapMaker::init(int argc, char *argv[])
 		image2 = portFactoryRegistry[connections.image2.roboticMiddleware]->createImage2();
 		
 		// create InputTaskTriggers and UpcallManagers
-		grayImage1InputTaskTrigger = new Smart::InputTaskTrigger<DomainVision::CommVideoImage>(grayImage1);
+		grayImage1InputTaskTrigger = new Smart::InputTaskTrigger<DGService_DGBasicLink::DGBasicLinkObject>(grayImage1);
 		grayImage1UpcallManager = new GrayImage1UpcallManager(grayImage1);
-		grayImage2InputTaskTrigger = new Smart::InputTaskTrigger<DomainVision::CommVideoImage>(grayImage2);
+		grayImage2InputTaskTrigger = new Smart::InputTaskTrigger<DGService_DGBasicLink::DGBasicLinkObject>(grayImage2);
 		grayImage2UpcallManager = new GrayImage2UpcallManager(grayImage2);
-		image1InputTaskTrigger = new Smart::InputTaskTrigger<DomainVision::CommVideoImage>(image1);
+		image1InputTaskTrigger = new Smart::InputTaskTrigger<DGService_DGBasicLink::DGBasicLinkObject>(image1);
 		image1UpcallManager = new Image1UpcallManager(image1);
-		image2InputTaskTrigger = new Smart::InputTaskTrigger<DomainVision::CommVideoImage>(image2);
+		image2InputTaskTrigger = new Smart::InputTaskTrigger<DGService_DGBasicLink::DGBasicLinkObject>(image2);
 		image2UpcallManager = new Image2UpcallManager(image2);
 		
 		// create input-handler
@@ -359,19 +359,19 @@ void TwoMapMaker::init(int argc, char *argv[])
 		// add client port to wiring slave
 		if(connections.grayImage1.roboticMiddleware == "ACE_SmartSoft") {
 			//FIXME: this must also work with other implementations
-			dynamic_cast<SmartACE::PushClient<DomainVision::CommVideoImage>*>(grayImage1)->add(wiringSlave, connections.grayImage1.wiringName);
+			dynamic_cast<SmartACE::PushClient<DGService_DGBasicLink::DGBasicLinkObject>*>(grayImage1)->add(wiringSlave, connections.grayImage1.wiringName);
 		}
 		if(connections.grayImage2.roboticMiddleware == "ACE_SmartSoft") {
 			//FIXME: this must also work with other implementations
-			dynamic_cast<SmartACE::PushClient<DomainVision::CommVideoImage>*>(grayImage2)->add(wiringSlave, connections.grayImage2.wiringName);
+			dynamic_cast<SmartACE::PushClient<DGService_DGBasicLink::DGBasicLinkObject>*>(grayImage2)->add(wiringSlave, connections.grayImage2.wiringName);
 		}
 		if(connections.image1.roboticMiddleware == "ACE_SmartSoft") {
 			//FIXME: this must also work with other implementations
-			dynamic_cast<SmartACE::PushClient<DomainVision::CommVideoImage>*>(image1)->add(wiringSlave, connections.image1.wiringName);
+			dynamic_cast<SmartACE::PushClient<DGService_DGBasicLink::DGBasicLinkObject>*>(image1)->add(wiringSlave, connections.image1.wiringName);
 		}
 		if(connections.image2.roboticMiddleware == "ACE_SmartSoft") {
 			//FIXME: this must also work with other implementations
-			dynamic_cast<SmartACE::PushClient<DomainVision::CommVideoImage>*>(image2)->add(wiringSlave, connections.image2.wiringName);
+			dynamic_cast<SmartACE::PushClient<DGService_DGBasicLink::DGBasicLinkObject>*>(image2)->add(wiringSlave, connections.image2.wiringName);
 		}
 		
 		

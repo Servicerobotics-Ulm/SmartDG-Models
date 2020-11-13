@@ -41,9 +41,9 @@ private:
 	unsigned int currentUpdateCount;
 	
 	Smart::StatusCode grayImage1Status;
-	DomainVision::CommVideoImage grayImage1Object;
+	DGService_DGBasicLink::DGBasicLinkObject grayImage1Object;
 	Smart::StatusCode grayImage2Status;
-	DomainVision::CommVideoImage grayImage2Object;
+	DGService_DGBasicLink::DGBasicLinkObject grayImage2Object;
 	
 	
 protected:
@@ -57,24 +57,24 @@ protected:
 	
 	
 	// overload and implement this method in derived classes to immediately get all incoming updates from GrayImage1 (as soon as they arrive)
-	virtual void on_GrayImage1(const DomainVision::CommVideoImage &input) {
+	virtual void on_GrayImage1(const DGService_DGBasicLink::DGBasicLinkObject &input) {
 		// no-op
 	}
 	
 	// this method can be safely used from the thread in derived classes
-	inline Smart::StatusCode grayImage1GetUpdate(DomainVision::CommVideoImage &grayImage1Object) const
+	inline Smart::StatusCode grayImage1GetUpdate(DGService_DGBasicLink::DGBasicLinkObject &grayImage1Object) const
 	{
 		// copy local object buffer and return the last status code
 		grayImage1Object = this->grayImage1Object;
 		return grayImage1Status;
 	}
 	// overload and implement this method in derived classes to immediately get all incoming updates from GrayImage2 (as soon as they arrive)
-	virtual void on_GrayImage2(const DomainVision::CommVideoImage &input) {
+	virtual void on_GrayImage2(const DGService_DGBasicLink::DGBasicLinkObject &input) {
 		// no-op
 	}
 	
 	// this method can be safely used from the thread in derived classes
-	inline Smart::StatusCode grayImage2GetUpdate(DomainVision::CommVideoImage &grayImage2Object) const
+	inline Smart::StatusCode grayImage2GetUpdate(DGService_DGBasicLink::DGBasicLinkObject &grayImage2Object) const
 	{
 		// copy local object buffer and return the last status code
 		grayImage2Object = this->grayImage2Object;

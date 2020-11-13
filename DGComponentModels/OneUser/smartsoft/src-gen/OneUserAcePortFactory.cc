@@ -52,14 +52,14 @@ int OneUserAcePortFactory::onStartup()
 	return componentImpl->startComponentInfrastructure();
 }
 
-Smart::IPushClientPattern<DomainVision::CommVideoImage> * OneUserAcePortFactory::createBWMap()
+Smart::IPushClientPattern<DGService_DGBasicLink::DGBasicLinkObject> * OneUserAcePortFactory::createBWMap()
 {
-	return new SmartACE::PushClient<DomainVision::CommVideoImage>(componentImpl);
+	return new SmartACE::PushClient<DGService_DGBasicLink::DGBasicLinkObject>(componentImpl);
 }
 
-Smart::IPushClientPattern<DomainVision::CommVideoImage> * OneUserAcePortFactory::createMap()
+Smart::IPushClientPattern<DGService_DGBasicLink::DGBasicLinkObject> * OneUserAcePortFactory::createMap()
 {
-	return new SmartACE::PushClient<DomainVision::CommVideoImage>(componentImpl);
+	return new SmartACE::PushClient<DGService_DGBasicLink::DGBasicLinkObject>(componentImpl);
 }
 
 

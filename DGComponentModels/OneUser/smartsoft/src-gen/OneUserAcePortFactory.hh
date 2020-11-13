@@ -34,8 +34,8 @@ public:
 	virtual void initialize(OneUser *component, int argc, char* argv[]) override;
 	virtual int onStartup() override;
 
-	virtual Smart::IPushClientPattern<DomainVision::CommVideoImage> * createBWMap() override;
-	virtual Smart::IPushClientPattern<DomainVision::CommVideoImage> * createMap() override;
+	virtual Smart::IPushClientPattern<DGService_DGBasicLink::DGBasicLinkObject> * createBWMap() override;
+	virtual Smart::IPushClientPattern<DGService_DGBasicLink::DGBasicLinkObject> * createMap() override;
 	
 	
 	// get a pointer to the internal component implementation

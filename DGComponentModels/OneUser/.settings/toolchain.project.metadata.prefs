@@ -1,0 +1,6 @@
+OneUser/BaseURI/value/0=http\://www.servicerobotik-ulm.de
+OneUser/Homepage/value/2=http\://www.servicerobotik-ulm.de
+OneUser/Purpose/value/3=Component used in binary dependency transmission case study
+OneUser/Supplier/value/1=Servicerobotics Ulm, Germany
+OneUser/shortDescription=A component representing a human user (via interface) in the system
+eclipse.preferences.version=1

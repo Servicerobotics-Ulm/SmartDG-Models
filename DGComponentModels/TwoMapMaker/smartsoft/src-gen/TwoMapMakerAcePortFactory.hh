@@ -34,13 +34,13 @@ public:
 	virtual void initialize(TwoMapMaker *component, int argc, char* argv[]) override;
 	virtual int onStartup() override;
 
-	virtual Smart::IPushClientPattern<DomainVision::CommVideoImage> * createGrayImage1() override;
-	virtual Smart::IPushClientPattern<DomainVision::CommVideoImage> * createGrayImage2() override;
-	virtual Smart::IPushClientPattern<DomainVision::CommVideoImage> * createImage1() override;
-	virtual Smart::IPushClientPattern<DomainVision::CommVideoImage> * createImage2() override;
+	virtual Smart::IPushClientPattern<DGService_DGBasicLink::DGBasicLinkObject> * createGrayImage1() override;
+	virtual Smart::IPushClientPattern<DGService_DGBasicLink::DGBasicLinkObject> * createGrayImage2() override;
+	virtual Smart::IPushClientPattern<DGService_DGBasicLink::DGBasicLinkObject> * createImage1() override;
+	virtual Smart::IPushClientPattern<DGService_DGBasicLink::DGBasicLinkObject> * createImage2() override;
 	
-	virtual Smart::IPushServerPattern<DomainVision::CommVideoImage> * createGrayMap(const std::string &serviceName) override;
-	virtual Smart::IPushServerPattern<DomainVision::CommVideoImage> * createRGBMap(const std::string &serviceName) override;
+	virtual Smart::IPushServerPattern<DGService_DGBasicLink::DGBasicLinkObject> * createGrayMap(const std::string &serviceName) override;
+	virtual Smart::IPushServerPattern<DGService_DGBasicLink::DGBasicLinkObject> * createRGBMap(const std::string &serviceName) override;
 	
 	// get a pointer to the internal component implementation
 	SmartACE::SmartComponent* getComponentImpl();

@@ -30,6 +30,22 @@ ImageCollector::~ImageCollector()
 }
 
 
+void ImageCollector::on_Image1(const DGService_DGBasicLink::DGBasicLinkObject &input)
+{
+	// upcall triggered from InputPort Image1
+	// - use a local mutex here, because this upcal is called asynchroneously from outside of this task
+	// - do not use longer blocking calls here since this upcall blocks the InputPort Image1
+	// - if you need to implement a long-running procedure, do so within the on_execute() method and in
+	//   there, use the method image1GetUpdate(input) to get a copy of the input object
+}
+void ImageCollector::on_Image2(const DGService_DGBasicLink::DGBasicLinkObject &input)
+{
+	// upcall triggered from InputPort Image2
+	// - use a local mutex here, because this upcal is called asynchroneously from outside of this task
+	// - do not use longer blocking calls here since this upcall blocks the InputPort Image2
+	// - if you need to implement a long-running procedure, do so within the on_execute() method and in
+	//   there, use the method image2GetUpdate(input) to get a copy of the input object
+}
 int ImageCollector::on_entry()
 {
 	// do initialization procedures here, which are called once, each time the task is started
@@ -44,6 +60,22 @@ int ImageCollector::on_execute()
 	
 	// to get the incoming data, use this methods:
 	Smart::StatusCode status;
+	DGService_DGBasicLink::DGBasicLinkObject image1Object;
+	status = this->image1GetUpdate(image1Object);
+	if(status != Smart::SMART_OK) {
+		std::cerr << status << std::endl;
+		// return 0;
+	} else {
+		std::cout << "received: " << image1Object << std::endl;
+	}
+	DGService_DGBasicLink::DGBasicLinkObject image2Object;
+	status = this->image2GetUpdate(image2Object);
+	if(status != Smart::SMART_OK) {
+		std::cerr << status << std::endl;
+		// return 0;
+	} else {
+		std::cout << "received: " << image2Object << std::endl;
+	}
 
 	std::cout << "Hello from ImageCollector " << std::endl;
 
